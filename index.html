@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+        <h1 id="título">Cadastro de estudantes para estágio</h1>
+ 
+    <form class="formulário" >
+<div class="container-sm">
+        <fieldset class="entradas">
+            
+            <div class="nomecompleto">
+                <label class="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" size="40" id="nome" required> 
+            </div>
+
+            <div>
+                <label> <strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome"  size="40" id="sobrenome" required>
+            </div>
+       
+            <div class="email">
+             <label for="email"> <strong>Email</strong></label>
+            <input type="email" name="email" size="40" id="email" required>
+        </div>
+        </fieldset>
+    </div> 
+    <br>
+    <!--Seleção-->        
+        <div class="seleção">
+            <label  for="área de estudo"> <strong> Qual a sua área de estudo?</strong></label>
+            <br>
+            <label>
+                <input class="área_de_estudo" type="radio" name="Análise e Desenvolvimento de Sistemas" value="Análise e Desenvolvimento de Sistemas"> Análise e Desenvolvimento de Sistemas                                                                                                                                                                                                                                        
+            </label>
+            <label>
+                <input class="área_de_estudo" type="radio" name="Ciência da Computação" value="Ciência da Computação"> Ciência da Computação
+            </label>
+            <label>
+                <input class="área_de_estudo" type="radio" name="Sistemas para Internet" value="Sistemas para Internet"> Sistemas para Internet
+            </label>
+        </div>
+        <br>
+    <!--Bootstrap container-->
+    
+  
+        <div>
+            <label><strong>Modalidade </strong></label>
+            <select name="modalidade" id="modalidade" required>
+            <option selected disabled value="">Selecione</option>    
+            <option> Bacharelado</option>
+            <option> Tecnólogo</option>
+            </select>
+            <fieldset type="grupo">
+                <br>
+                <label><strong> Selecione as tecnologias </strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" value="Python">
+                <label for="tecnologia1">Python</label>
+                <input type="checkbox" id="tecnologia2" value="HTML">
+                <label for="tecnologia2">HTML</label>
+                <input type="checkbox" id="tecnologia3" value="CSS">
+                <label for="tecnologia3">CSS</label>
+            </fieldset>
+        </div>
+        <div>
+            <br>
+            <label> <strong> Utilize o espaço para adicionar informações extras </strong></label>
+            <textarea rows="2" id="informações" name="informações"></textarea>
+        <button type="submit"> Concluído </button>
+    </div>
+    </form>
+<script src="index.js"></script>   
+</body>
+</html>
